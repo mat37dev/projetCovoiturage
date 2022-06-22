@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../../image/faviconSFDA.ico"/>
+    <title>Connexion</title>
+    <!--================ Feuilles CSS ================-->
+    <link rel="stylesheet" href="../../CSS/pageLogin_Register.css">
+    <!--================ Icones ================-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6477c38972.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="form">
+        <div class="text-center">
+            <h6><span>Login</span> <span>Register</span></h6>
+            <input type="checkbox" class="checkbox" id="reg-log">
+            <label for="reg-log"></label>
+            <div class="card-3d-wrap">
+                <div class="card-3d-wrapper">
+                    <!--================ Login ================-->
+                    <form class="container ">
+                        <div class="form">
+                            <h3>Connexion</h3>
+                            <input type="email" placeholder="Email"required name="mail">
+                            <input type="password" placeholder="Mot de Passe"required name="mdp">
+                        </div>
+                        <div class="step-row">
+                            <div id="progressLogin"></div>
+                            <div class="step-col-login" ><small>Etape 1</small></div>
+                        </div>
+                    </form>
+                    <!--================ Register ================-->
+                    <form class="container card-back">
+                        <div id="Form1" class="form">
+                            <h3>Inscription</h3>
+                            <input type="text" placeholder="Nom"required name="nom">
+                            <input type="text" placeholder="Prenom"required name="prenom">
+                            <input type="email" placeholder="Email"required name="mail">
+                            <div class="btn-box">
+                                <button type="button" id="Next2">Suivant</button>
+                            </div>
+                        </div>
+                        <div id="Form2" class="form">
+                            <h3>Inscription</h3>
+                            <input type="password" placeholder="Mot de Passe"required name="mdp">
+                            <input type="password" placeholder="Confirmation Mot de Passe"required name="confMdp">
+                            <div class="btn-box">
+                                <button type="button" id="Back1">Retour</button>
+                                <button type="button" id="Next3">Suivant</button>
+                            </div>
+                        </div>
+                        <div id="Form3" class="form">
+                            <h3>Inscription</h3>
+                            <input type="tel" placeholder="Téléphone"required name="tel">
+                            <input type="date" placeholder="Date de Naissance"required name="naissance">
+                            <input type="text" placeholder="Pays"required name="pays">
+
+                            <div class="btn-box">
+                                <button type="button" id="Back2">Retour</button>
+                                <button type="button">S'inscrire</button>
+                            </div>
+                        </div>
+                        <div class="step-row">
+                            <div id="progress"></div>
+                            <div class="step-col"><small>Etape 1</small></div>
+                            <div class="step-col"><small>Etape 2</small></div>
+                            <div class="step-col"><small>Etape 3</small></div>
+                        </div>
+                    </form>
+
+                    <!--================ Login ================-->
+<!--                    <div class="card-front">-->
+<!--                        <div class="center-wrap">-->
+<!--                            <h4 class="heading">Login</h4>-->
+<!--                            <div class="form-group">-->
+<!--                                <input type="email" class="form-style" placeholder="Votre Email">-->
+<!--                                <i class="input-icon material-icons">alternate_email</i>-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <input type="password" class="form-style" placeholder="Votre Mot de Passe">-->
+<!--                                <i class="input-icon material-icons">lock</i>-->
+<!--                            </div>-->
+<!--                            <a href="#" class="btn">submit</a>-->
+<!--                            <p class="text-center"><a href="#" class="link">Mot de Passe oublié</a></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <!--================ Register ================-->
+<!--                    <div class="card-back">-->
+<!--                        <div class="center-wrap">-->
+<!--                            <h4 class="heading">Register</h4>-->
+
+<!--                            <div class="form-group">-->
+<!--                                <input type="email" class="form-style" placeholder="Votre Email">-->
+<!--                                <i class="input-icon material-icons">alternate_email</i>-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <input type="password" class="form-style" placeholder="Votre Mot de Passe">-->
+<!--                                <i class="input-icon material-icons">lock</i>-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <input type="password" class="form-style" placeholder="Confirmation Mot de Passe">-->
+<!--                                <i class="input-icon material-icons">lock</i>-->
+<!--                            </div>-->
+<!--                            <a href="#" class="btn">submit</a>-->
+<!--                        </div>-->
+ <!--                   </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================ Feuilles JavaScript ================-->
+    <script src="../../javaScript/pageLogin_register.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    background: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+a
+{
+    text-decoration: none;
+}
+.text-center
+{
+    text-align: center;
+}
+input[type="checkbox"]
+{
+    display: none;
+}
+h4
+{
+    font-weight: 600;
+    color: #ffffff;
+}
+h6
+{
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+h6 span
+{
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label
+{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 16px;
+    background: crimson;
+    border-radius: 8px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.checkbox:checked + label::before,
+.checkbox:not(:checked) + label::before
+{
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: crimson;
+    background-color: #ffffff;
+    top: -10px;
+    left: -10px;
+    font-family: 'Material Icons';
+    content: '\f1e2';
+    line-height: 36px;
+    text-align: center;
+    font-size: 24px;
+    transition: all 0.5s ease;
+}
+.checkbox:checked + label::before
+{
+    transform: translateX(44px) rotate(-270deg);
+}
+.card-3d-wrap
+{
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    height: 400px;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    margin-top: 60px;
+}
+.card-3d-wrapper
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transition: all 600ms ease-out;
+}
+
+.card-back
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transform: rotateY(180deg);
+}
+.checkbox:checked ~ .card-3d-wrap .card-3d-wrapper
+{
+    transform: rotateY(180deg);
+}
+
+
+
+
+.container{
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+    width: 360px;
+    height: 400px;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 5%;
+    overflow: hidden;
+
+}
+h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+.container .form{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transition: 0.5s;
+
+}
+.form input{
+    width: 100%;
+    padding: 10px 5px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+::placeholder{
+    color: #777;
+}
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+
+}
+.form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 8px 25px 0 rgba(228,10,57,0.2);
+}
+.form button:hover{
+    box-shadow: 0 8px 5px 0 rgba(228,10,57,0.2);
+}
+#Form2{
+    left: 450px;
+}
+#Form3{
+    left: 450px;
+}
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+.step-col{
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+.step-col-login{
+    width: 360px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    transition: 1s;
+}
+#progressLogin{
+    position: absolute;
+    height: 100%;
+    width: 360px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    transition: 1s;
+}
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #ffad06;
+}
